@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html ng-app="watchApp">
+  <head>
+    <title>AngularJs $watch() Function with Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="./controller.js"></script>
+  </head>
+  <body>
+    <div ng-controller="watchCtrl">
+      <h2>AngularJS $watch() Function Example</h2>
+
+      Enter Text:<input type="text" ng-model="txtval" /><br /><br />
+
+      <span style="color: Red"
+        >No. of Times $watch() Function Fired: {{count}}</span
+      >
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+:root{
+    --body-background: rgb(159, 117, 238);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--body-background);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.btn {
+    font-size: 20px;
+    width: 10rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
