@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body ng-app="mainModule">
+    <main>
+      <div class="container" ng-controller="mainController">
+        <h1>To Do List</h1>
+        <form action="">
+          <label for="nota">Nota</label>
+          <input name="nota" type="text" ng-model="" />
+          <button ng-click="agregar()">Agregar item</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
