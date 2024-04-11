@@ -1,0 +1,79 @@
+:root{
+    --black-color: #000;
+    --body-color: #1D1A39;
+    --first-color: #662549;
+    --second-color: #E8BCB9;
+    --color-btn: #F39F5A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color-btn);
+    width: 3.5rem;
+    font-size: x-large;
+    font-weight: bolder;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.container {
+    background-color: var(--color-btn);
+    height: 3.5rem;
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--black-color);
+    border-style: solid;
+}
+
+.main-section {
+    margin: 5rem;
+    width: 25%;
+    height: 30rem;
+    background-color: var(--first-color);
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel {
+    width: 90%;
+    margin: 50px 0px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.number-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+.iqual {
+    width: 8rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+}
