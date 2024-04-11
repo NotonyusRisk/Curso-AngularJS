@@ -1,6 +1,8 @@
 let app = angular.module('mainModule', []);
 
 app.controller('mainController', function($scope) {
+    $scope.nota = [];
+    $scope.newNota = '';
     $scope.agregar = () => {
         return 'agregar'
     }
@@ -8,4 +10,5 @@ app.controller('mainController', function($scope) {
     $scope.eliminar = () => {
         return 'eliminar'
     }
+
 })
