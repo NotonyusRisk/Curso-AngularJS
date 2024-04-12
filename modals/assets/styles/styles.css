@@ -30,6 +30,10 @@ button {
     border-radius: 5px;
 }
 
+h1 {
+    margin: 10px;
+}
+
 .container {
     background-color: var(--color-btn);
     height: 3.5rem;
@@ -53,6 +57,8 @@ button {
 .panel {
     width: 90%;
     margin: 50px 0px;
+    display: flex;
+    justify-content: end;
 }
 
 .numbers {

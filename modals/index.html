@@ -11,26 +11,25 @@
   <body ng-controller="firstController">
     <section class="main-section container">
       <div class="panel container">
-        <h1> {{}} </h1>
+        <h1> {{ display }} </h1>
       </div>
       <div class="numbers">
-        <button class="number container">1</button>
-        <button class="number container">2</button>
-        <button class="number container">3</button>
-        <button class="number container">+</button>
-        <button class="number container">4</button>
-        <button class="number container">5</button>
-        <button class="number container">6</button>
-        <button class="number container">-</button>
-        <button class="number container">7</button>
-        <button class="number container">8</button>
-        <button class="number container">9</button>
-        <button class="number container">X</button>
-      </div>
-      <div class="number-bottom">
-        <button class="number iqual bottom container">=</button>
-        <button class="number bottom container">0</button>
-        <button class="number bottom container">/</button>
+        <button class="number container" ng-click="agregarNumero('1')">1</button>
+        <button class="number container" ng-click="agregarNumero('2')">2</button>
+        <button class="number container" ng-click="agregarNumero('3')">3</button>
+        <button class="number container" ng-click="agregarOperador('+')">+</button>
+        <button class="number container" ng-click="agregarNumero('4')">4</button>
+        <button class="number container" ng-click="agregarNumero('5')">5</button>
+        <button class="number container" ng-click="agregarNumero('6')">6</button>
+        <button class="number container" ng-click="agregarOperador('-')">-</button>
+        <button class="number container" ng-click="agregarNumero('7')">7</button>
+        <button class="number container" ng-click="agregarNumero('8')">8</button>
+        <button class="number container" ng-click="agregarNumero('9')">9</button>
+        <button class="number container" ng-click="agregarOperador('*')">*</button>
+        <button class="number container">ac</button>
+        <button class="number container" ng-click="resultado()">=</button>
+        <button class="number container" ng-click="agregarNumero('0')">0</button>
+        <button class="number container" ng-click="agregarOperador('/')">/</button>
       </div>
     </section>
   </body>
