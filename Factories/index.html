@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="./controller.js"></script>
-    <title>Document</title>
+    <title>To Do List</title>
 </head>
 <body ng-controller="firstController">
-    
+    <main>
+        <div class="ingreso-container">
+            <form ng-submit="addActv()">
+                <input type="text" ng-module="newActv.desc">
+                <input type="datetime-local" ng-module="newActv.fecha">
+                <input type="submit" value="Guardar actividad">
+            </form>
+        </div>
+        <div class="actividades">
+            <ul>
+                <li ng-repeat="actividad in todo">
+                    {{actividad.desc}} - {{actividad.fecha}}
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
