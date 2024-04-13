@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="MyFirstApp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peticiones HTTP</title>
+    <link rel="stylesheet" href="./styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="./controller.js"></script>
-</head>
-<body ng-controller="PeticionesHTTP">
-    <input type="text" ng-model="newPost.names"><br>
-    <input type="text" ng-model="newPost.accounts"><br>
-    <button ng-click="addPost()">Ingresar</button>
-    <ul>
-        <li ng-repeat="post in posts">
-            <h2>{{post.names}}</h2>
-            <p>
-                 {{post.accounts}}
-            </p>
-        </li>
-    </ul>
-</body>
+  </head>
+  <body ng-controller="PeticionesHTTP">
+    <main>
+      <section class="input-section">
+        <input type="text" ng-model="newPost.names"/><br />
+        <input type="text" ng-model="newPost.accounts"/><br />
+        <button ng-click="addPost()">
+            <h2>Ingresar</h2>
+        </button>
+      </section>
+      <section class="show-api">
+        <ul>
+            <li ng-repeat="post in posts">
+                <h2>{{post.names}}</h2>
+                <p>
+                     {{post.accounts}}
+                </p>
+            </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

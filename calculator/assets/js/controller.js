@@ -26,7 +26,7 @@ app.controller('firstController', function ($scope, $http) {
             $scope.segundaParte = $scope.display;
         }
         
-        let resultado = 0;
+        let resultado;
         switch($scope.operador){
             case '+':
                 resultado = parseFloat($scope.primeraParte) + parseFloat($scope.segundaParte);
@@ -40,6 +40,20 @@ app.controller('firstController', function ($scope, $http) {
             case '/':
                 resultado = parseFloat($scope.primeraParte) / parseFloat($scope.segundaParte);
                 break;
+            case '^':
+                resultado = parseFloat($scope.primeraParte) ** parseFloat($scope.segundaParte);
+                break;
         }
+        $scope.display = resultado.toString();
+        $scope.primeraParte = resultado;
+        $scope.operador = null;
+        $scope.segundaParte = '';
+    }
+
+    $scope.borrarTodo = () => {
+        $scope.display = '0';
+        $scope.primeraParte = '';
+        $scope.operador = null;
+        $scope.segundaParte = '';
     }
 })
